@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<af:pageTemplateDef xmlns="http://www.w3.org/1999/xhtml" xmlns:ui="http://java.sun.com/jsf/facelets"
+                    xmlns:af="http://xmlns.oracle.com/adf/faces/rich" var="attrs" definition="private"
+                    xmlns:afc="http://xmlns.oracle.com/adf/faces/rich/component">
+    <af:xmlContent>
+        <afc:component>
+            <afc:description/>
+            <afc:display-name>ADFSamples Template</afc:display-name>
+            <afc:facet>
+                <afc:facet-name>content</afc:facet-name>
+            </afc:facet>
+        </afc:component>
+    </af:xmlContent>
+    <af:group id="pt_db1">
+        <af:resource type="css" source="/bootstrap/css/bootstrap.min.css"/>
+        <ui:include src="/adfsamples/templates/fragments/fragment-navbar.jsff"/>
+        <div class="container-fluid">
+            <af:facetRef facetName="content"/>
+        </div>
+    </af:group>
+</af:pageTemplateDef>
